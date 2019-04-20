@@ -21,36 +21,35 @@
 pages/index.json
 ```json
 "components": {
-	"slide-page": "components/slide-page/index"
+  "slide-page": "components/slide-page/index"
 }
 ```
 pages/index.js
 ```javascript
-
 Page({
-	data: {
-		slideData: [{...}, ...]
-	},
+  data: {
+    slideData: [{...}, ...]
+  },
 
-	/**
-	 * @param {object} e.detail - { activeIndex, previoursIndex, viewData }
-	 */
-	onSlideChangeStart(e) {},
-	onSlideChangeEnd(e) {},
-	onSlideTransitionStart(e) {},
-	onSlideTransitionEnd(e) {}
+  /**
+   * @param {object} e.detail - { activeIndex, previoursIndex, viewData }
+   */
+  onSlideChangeStart(e) {},
+  onSlideChangeEnd(e) {},
+  onSlideTransitionStart(e) {},
+  onSlideTransitionEnd(e) {}
 })
 ```
 
 pages/index.wxml
 ```xml
 <slide-page
-	data="{{ slideData }}"
-	bind:changeStart="onSlideChangeStart"
-	bind:changeEnd="onSlideChangeEnd"
-	bind:transitionStart="onSlideTransitionStart"
-	bind:transitionEnd="onSlideTransitionEnd"
-	/>
+  data="{{ slideData }}"
+  bind:changeStart="onSlideChangeStart"
+  bind:changeEnd="onSlideChangeEnd"
+  bind:transitionStart="onSlideTransitionStart"
+  bind:transitionEnd="onSlideTransitionEnd"
+  />
 ```
 
 components/slide-page/item/*
