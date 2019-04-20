@@ -1,0 +1,10 @@
+
+<view class='body'>
+  <view style='transition:.2s ease-in;opacity:{{ (item.coverLoaded ? "1" : "0") }}'>
+    <image mode='widthFix' class='cover' src='{{ item.cover }}' lazy-load data-i='{{ index }}' bindload='onCoverLoaded'></image>
+  </view>
+  <view class='en-title'>{{ item.en }}</view>
+  <view class='header'>
+    <text class='zh-title'>{{ item.zh }}</text>
+  </view>
+</view>
