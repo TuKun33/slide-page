@@ -81,6 +81,12 @@ module.exports = {
     'semi': [
       'error',
       'never'
+    ],
+    'no-tabs': [
+      'error',
+      {
+        'allowIndentationTabs': true
+      }
     ]
   },
   'globals': {

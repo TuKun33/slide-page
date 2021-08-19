@@ -1,1 +1,15 @@
-<view class="index other">{{prop}}-{{flag}}</view>
+<!-- <import src="./item.wxml" /> -->
+
+<view class="container">
+  <view class="wrapper" bindtouchstart="touchstart" catchtouchmove="touchmove" catchtouchend="touchend" animation="{{ animationData }}">
+		<view class='slide' wx:for="{{ viewData }}" wx:key="id">
+			<!-- {{ item }} -->
+			<include src="./item/index.wxml" />
+			<!-- <template is="slide-item" data="{{ item, index, data }}"/> -->
+		</view>
+		
+		<view class='slide' wx:if='{{ viewData.length === 0 }}'>
+			<view class='body' style='height:630rpx'></view>
+		</view>
+  </view>
+</view>
