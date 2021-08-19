@@ -1,0 +1,11 @@
+{
+	"pages": [
+		"pages/index/index"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#d3dce6",
+		"navigationBarTitleText": "Slide Page",
+		"navigationBarTextStyle": "black"
+	}
+}

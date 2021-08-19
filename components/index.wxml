@@ -1,0 +1,15 @@
+<!-- <import src="./item.wxml" /> -->
+
+<view class="container">
+  <view class="wrapper" bindtouchstart="touchstart" catchtouchmove="touchmove" catchtouchend="touchend" animation="{{ animationData }}">
+		<view class='slide' wx:for="{{ data }}" wx:key="id" wx:if="{{ (index >= activeDataIndex - 1 && index <= activeDataIndex + 1) }}">
+			<!-- {{ item }} -->
+			<include src="./item/index.wxml" />
+			<!-- <template is="slide-item" data="{{ item, index, data }}"/> -->
+		</view>
+		
+		<view class='slide' wx:if='{{ data.length === 0 }}'>
+			<view class='body' style='height:700rpx'></view>
+		</view>
+  </view>
+</view>

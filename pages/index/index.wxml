@@ -1,0 +1,3 @@
+<view class="page">
+	<comp data="{{ dailys }}"></comp>
+</view>
